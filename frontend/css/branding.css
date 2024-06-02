@@ -236,7 +236,7 @@ input:focus {
   position: relative;
   left: -3px;
 }
-.form-check-input:checked{
+.form-check-input:checked {
   background-color: var(--th-primary-color);
   box-shadow: none;
 }
@@ -1186,11 +1186,13 @@ body::-webkit-scrollbar-thumb {
   position: relative;
   height: calc(100vh - 0px);
   overflow: hidden;
+  min-height: 500px;
 }
 .home-banner {
   position: relative;
   height: calc(100vh - 0px);
   overflow: hidden;
+  min-height: 500px
 }
 .home-banner .content_box.theme_icon_star {
   position: relative;

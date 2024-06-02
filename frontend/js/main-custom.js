@@ -147,7 +147,7 @@ var swiper = new Swiper(".sidebySlider", {
     disableOnInteraction: false, // autoplay won't stop after interactions
   },
   loop: true, // make sure the slider loops
-  speed: 3000, // transition speed in milliseconds
+  speed: 2000, // transition speed in milliseconds
 });
 
 const navbarMenu = document.getElementById("menu");
