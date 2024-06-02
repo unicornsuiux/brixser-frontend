@@ -1,0 +1,30 @@
+@media only screen and (min-width: 992px) {
+  .menu {
+    position: relative;
+    top: 0;
+    width: auto;
+    height: auto;
+    padding: 0rem;
+    background: none;
+    box-shadow: none;
+    display: flex;
+    flex-grow: 1;
+  }
+  .menu-inner {
+    display: flex;
+    flex-direction: row;
+    column-gap: 30px;
+    margin: 0 auto;
+    margin-top: 6px;
+  }
+  .menu-link {
+    text-transform: capitalize;
+  }
+  .menu-block {
+    margin-left: 2rem;
+  }
+  .burger {
+    display: none;
+    visibility: hidden;
+  }
+}
