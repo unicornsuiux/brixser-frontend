@@ -31,10 +31,12 @@
     visibility: hidden;
   }
   .header.header-light.shift {
-    background-color: var(--th-bg-white) !important;
     animation: headerAnimation;
     animation-duration: 1s;
     animation-fill-mode: both;
+  }
+  body.home-page .header.header-light.shift{
+    background-color: var(--th-bg-white) !important;
   }
   .header.header-dark.shift {
     background-color: var(--th-bg-black) !important;

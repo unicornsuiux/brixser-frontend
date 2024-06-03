@@ -11,6 +11,10 @@
   transition: all 0.35s ease;
   padding: 0 35px;
   height: 95px;
+  background-color: var(--th-bg-white);
+}
+body.home-page .header {
+  background-color: transparent;
 }
 .navbar {
   display: flex;
@@ -236,25 +240,46 @@
 .menu-inner .th-btn {
   display: none;
 }
-/* FOR HEADER LIGHT */
-.header.header-light.shift .menu_item:hover,
-.header.header-light.shift .menu_item:focus,
-.header.header-light.shift .menu_item:visited {
+/*HOMEPAGE FOR HEADER LIGHT */
+.home-page .header.header-light.shift .menu_item:hover,
+.home-page .header.header-light.shift .menu_item:focus,
+.home-page .header.header-light.shift .menu_item:visited {
   color: var(--th-title-color) !important;
 }
-.header.header-light.shift .burger-line {
+.home-page .header.header-light.shift .burger-line {
   background-color: var(--th-bg-black);
 }
-.header-light.header.menu_item:hover {
+.home-page .header-light.header.menu_item:hover {
   color: var(--th-primary-color) !important;
 }
-.header.header-light.shift {
+.home-page .header.header-light.shift {
   background-color: var(--th-bg-white) !important;
 }
-.header.header-light.shift .header-left-link .menu_item img {
+.home-page .header.header-light.shift .header-left-link .menu_item img {
   filter: unset;
 }
-.header.header-light.shift .header-left-link .menu_item span {
+.home-page .header.header-light.shift .header-left-link .menu_item span {
+  color: var(--th-bg-black) !important;
+}
+/* FOR OTHER PAGES HEADER LIGHT */
+.header.header-light .menu_item:hover,
+.header.header-light .menu_item:focus,
+.header.header-light .menu_item:visited {
+  color: var(--th-title-color) !important;
+}
+.header.header-light .burger-line {
+  background-color: var(--th-bg-black);
+}
+.header-light.header .menu_item:hover {
+  color: var(--th-primary-color) !important;
+}
+.header.header-light {
+  background-color: var(--th-bg-white) !important;
+}
+.header.header-light .header-left-link .menu_item img {
+  filter: unset;
+}
+.header.header-light .header-left-link .menu_item span {
   color: var(--th-bg-black) !important;
 }
 @keyframes headerAnimation {
@@ -305,7 +330,7 @@
   margin: 0;
   font-weight: var(--th-fw-600);
 }
-body::after {
+body.home-page::after {
   content: "";
   display: block;
   position: absolute;
@@ -753,10 +778,6 @@ body::after {
   z-index: 2;
 }
 /*============ PROPERTY CARD ============= */
-.section-featured {
-}
-.property-card {
-}
 .property-card-images {
   position: relative;
   transition: all 0.2s ease-in-out;
@@ -776,7 +797,7 @@ body::after {
   position: absolute;
   width: 50%;
   height: 100%;
-  background-color: rgba(239, 50, 166, 0.10);
+  background-color: rgba(239, 50, 166, 0.1);
   z-index: 2;
   transition: all 0.3s linear;
   border-radius: var(--th-radius-5);

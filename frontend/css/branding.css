@@ -120,6 +120,9 @@ body {
   font-weight: normal;
   color: var(--th-body-color);
   line-height: 26px;
+  padding-top: 95px;
+}
+body.home-page {
   padding-top: 0px;
 }
 
@@ -885,32 +888,33 @@ body::-webkit-scrollbar-thumb {
 }
 
 /*================ THEME PAGINATION ================*/
-
+.theme-pagination {
+  display: flex;
+  justify-content: center;
+}
 .theme-pagination ul li {
   display: inline-block;
 }
 .theme-pagination ul li:not(:last-child) {
   margin-right: 10px;
 }
-.theme-pagination ul li a,
-.theme-pagination ul li span {
+.theme-pagination ul li a {
   display: inline-block;
   width: 50px;
   height: 50px;
   line-height: 46px;
   text-align: center;
   border-radius: 7px;
-  border: 2px solid #f1f1f1;
+  border: 2px solid #ccc;
   font-size: 18px;
   font-weight: 600;
+  border-radius: 50%;
 }
 .theme-pagination ul li a:hover,
-.theme-pagination ul li a.current,
-.theme-pagination ul li span:hover,
-.theme-pagination ul li span.current {
+.theme-pagination ul li a.current {
   background: var(--th-primary-color);
-  border-color: var(--th-bc-dark);
-  color: var(--th-body-color);
+  border-color: var(--th-bg-black);
+  color: var(--th-bg-white);
 }
 
 /*================ PRELOADER CSS ================*/
@@ -2409,239 +2413,239 @@ body::-webkit-scrollbar-thumb {
   }
   /* PADDING END 10PX TO 200PX */
   .pe-lg-10 {
-    padding-right: 10px!important;
+    padding-right: 10px !important;
   }
   .pe-lg-15 {
-    padding-right: 15px!important;
+    padding-right: 15px !important;
   }
   .pe-lg-20 {
-    padding-right: 20px!important;
+    padding-right: 20px !important;
   }
   .pe-lg-25 {
-    padding-right: 25px!important;
+    padding-right: 25px !important;
   }
   .pe-lg-30 {
-    padding-right: 30px!important;
+    padding-right: 30px !important;
   }
   .pe-lg-35 {
-    padding-right: 35px!important;
+    padding-right: 35px !important;
   }
   .pe-lg-40 {
-    padding-right: 40px!important;
+    padding-right: 40px !important;
   }
   .pe-lg-45 {
-    padding-right: 45px!important;
+    padding-right: 45px !important;
   }
   .pe-lg-50 {
-    padding-right: 50px!important;
+    padding-right: 50px !important;
   }
   .pe-lg-55 {
-    padding-right: 55px!important;
+    padding-right: 55px !important;
   }
   .pe-lg-60 {
-    padding-right: 60px!important;
+    padding-right: 60px !important;
   }
   .pe-lg-65 {
-    padding-right: 65px!important;
+    padding-right: 65px !important;
   }
   .pe-lg-70 {
-    padding-right: 70px!important;
+    padding-right: 70px !important;
   }
   .pe-lg-75 {
-    padding-right: 75px!important;
+    padding-right: 75px !important;
   }
   .pe-lg-80 {
-    padding-right: 80px!important;
+    padding-right: 80px !important;
   }
   .pe-lg-85 {
-    padding-right: 85px!important;
+    padding-right: 85px !important;
   }
   .pe-lg-90 {
-    padding-right: 90px!important;
+    padding-right: 90px !important;
   }
   .pe-lg-95 {
-    padding-right: 95px!important;
+    padding-right: 95px !important;
   }
   .pe-lg-100 {
-    padding-right: 100px!important;
+    padding-right: 100px !important;
   }
   .pe-lg-105 {
-    padding-right: 105px!important;
+    padding-right: 105px !important;
   }
   .pe-lg-110 {
-    padding-right: 110px!important;
+    padding-right: 110px !important;
   }
   .pe-lg-115 {
-    padding-right: 115px!important;
+    padding-right: 115px !important;
   }
   .pe-lg-120 {
-    padding-right: 120px!important;
+    padding-right: 120px !important;
   }
   .pe-lg-125 {
-    padding-right: 125px!important;
+    padding-right: 125px !important;
   }
   .pe-lg-130 {
-    padding-right: 130px!important;
+    padding-right: 130px !important;
   }
   .pe-lg-135 {
-    padding-right: 135px!important;
+    padding-right: 135px !important;
   }
   .pe-lg-140 {
-    padding-right: 140px!important;
+    padding-right: 140px !important;
   }
   .pe-lg-145 {
-    padding-right: 145px!important;
+    padding-right: 145px !important;
   }
   .pe-lg-150 {
-    padding-right: 150px!important;
+    padding-right: 150px !important;
   }
   .pe-lg-155 {
-    padding-right: 155px!important;
+    padding-right: 155px !important;
   }
   .pe-lg-160 {
-    padding-right: 160px!important;
+    padding-right: 160px !important;
   }
   .pe-lg-165 {
-    padding-right: 165px!important;
+    padding-right: 165px !important;
   }
   .pe-lg-170 {
-    padding-right: 170px!important;
+    padding-right: 170px !important;
   }
   .pe-lg-175 {
-    padding-right: 175px!important;
+    padding-right: 175px !important;
   }
   .pe-lg-180 {
-    padding-right: 180px!important;
+    padding-right: 180px !important;
   }
   .pe-lg-185 {
-    padding-right: 185px!important;
+    padding-right: 185px !important;
   }
   .pe-lg-190 {
-    padding-right: 190px!important;
+    padding-right: 190px !important;
   }
   .pe-lg-195 {
-    padding-right: 195px!important;
+    padding-right: 195px !important;
   }
   .pe-lg-200 {
-    padding-right: 200px!important;
+    padding-right: 200px !important;
   }
   /* PADDING TOP */
   .pt-lg-10 {
-    padding-top: 10px!important;  
+    padding-top: 10px !important;
   }
   .pt-lg-15 {
-    padding-top: 15px!important;  
+    padding-top: 15px !important;
   }
   .pt-lg-20 {
-    padding-top: 20px!important;  
+    padding-top: 20px !important;
   }
   .pt-lg-25 {
-    padding-top: 25px!important;  
+    padding-top: 25px !important;
   }
   .pt-lg-30 {
-    padding-top: 30px!important;  
+    padding-top: 30px !important;
   }
   .pt-lg-35 {
-    padding-top: 35px!important;  
+    padding-top: 35px !important;
   }
   .pt-lg-40 {
-    padding-top: 40px!important;  
+    padding-top: 40px !important;
   }
   .pt-lg-45 {
-    padding-top: 45px!important;  
+    padding-top: 45px !important;
   }
   .pt-lg-50 {
-    padding-top: 50px!important;  
+    padding-top: 50px !important;
   }
   .pt-lg-55 {
-    padding-top: 55px!important;  
+    padding-top: 55px !important;
   }
   .pt-lg-60 {
-    padding-top: 60px!important;  
+    padding-top: 60px !important;
   }
   .pt-lg-65 {
-    padding-top: 65px!important;  
+    padding-top: 65px !important;
   }
   .pt-lg-70 {
-    padding-top: 70px!important;  
+    padding-top: 70px !important;
   }
   .pt-lg-75 {
-    padding-top: 75px!important;  
+    padding-top: 75px !important;
   }
   .pt-lg-80 {
-    padding-top: 80px!important;  
+    padding-top: 80px !important;
   }
   .pt-lg-85 {
-    padding-top: 85px!important;  
+    padding-top: 85px !important;
   }
   .pt-lg-90 {
-    padding-top: 90px!important;  
+    padding-top: 90px !important;
   }
   .pt-lg-95 {
-    padding-top: 95px!important;  
+    padding-top: 95px !important;
   }
   .pt-lg-100 {
-    padding-top: 100px!important;
+    padding-top: 100px !important;
   }
   .pt-lg-105 {
-    padding-top: 105px!important;
+    padding-top: 105px !important;
   }
   .pt-lg-110 {
-    padding-top: 110px!important;
+    padding-top: 110px !important;
   }
   .pt-lg-115 {
-    padding-top: 115px!important;
+    padding-top: 115px !important;
   }
   .pt-lg-120 {
-    padding-top: 120px!important;
+    padding-top: 120px !important;
   }
   .pt-lg-125 {
-    padding-top: 125px!important;
+    padding-top: 125px !important;
   }
   .pt-lg-130 {
-    padding-top: 130px!important;
+    padding-top: 130px !important;
   }
   .pt-lg-135 {
-    padding-top: 135px!important;
+    padding-top: 135px !important;
   }
   .pt-lg-140 {
-    padding-top: 140px!important;
+    padding-top: 140px !important;
   }
   .pt-lg-145 {
-    padding-top: 145px!important;
+    padding-top: 145px !important;
   }
   .pt-lg-150 {
-    padding-top: 150px!important;
+    padding-top: 150px !important;
   }
   .pt-lg-155 {
-    padding-top: 155px!important;
+    padding-top: 155px !important;
   }
   .pt-lg-160 {
-    padding-top: 160px!important;
+    padding-top: 160px !important;
   }
   .pt-lg-165 {
-    padding-top: 165px!important;
+    padding-top: 165px !important;
   }
   .pt-lg-170 {
-    padding-top: 170px!important;
+    padding-top: 170px !important;
   }
   .pt-lg-175 {
-    padding-top: 175px!important;
+    padding-top: 175px !important;
   }
   .pt-lg-180 {
-    padding-top: 180px!important;
+    padding-top: 180px !important;
   }
   .pt-lg-185 {
-    padding-top: 185px!important;
+    padding-top: 185px !important;
   }
   .pt-lg-190 {
-    padding-top: 190px!important;
+    padding-top: 190px !important;
   }
   .pt-lg-195 {
-    padding-top: 195px!important;
+    padding-top: 195px !important;
   }
   .pt-lg-200 {
-    padding-top: 200px!important;
+    padding-top: 200px !important;
   }
 }
 
