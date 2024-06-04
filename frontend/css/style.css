@@ -1018,6 +1018,67 @@ body.home-page::after {
 .th-price-card-img {
   padding-right: 25px;
 }
+/* PACKAGE CARDS */
+.package-item {
+  /* border: 1px solid #ded9d9; */
+  border-radius: var(--th-radius-10) var(--th-radius-10) 0 0;
+  background-color: var(--th-bg-light);
+  /* box-shadow: rgba(100, 100, 50, 0.11) 0px 7px 29px 0px; */
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+.package-item-header {
+  padding: 33px 20px 20px;
+  min-height: 136px;
+  margin-bottom: 10px;
+}
+.package-item-header h3 {
+  font-family: var(--th-body-family);
+  margin-bottom: 0;
+  color: #333;
+}
+.package-tab-line {
+  font-size: var(--th-font14);
+  color: var(--th-primary-color);
+  font-weight: 600;
+  line-height: 21px;
+}
+.package_content {
+  padding: 0px 20px 20px;
+}
+.package_content .fs_14 {
+  font-weight: 400;
+  line-height: 26px;
+  text-align: left;
+  margin-bottom: 6px;
+  color: #000;
+}
+.line-through {
+  font-weight: 500 !important;
+  text-decoration: line-through;
+}
+.package_bottom {
+  background-color: var(--th-bg-black);
+  padding: 33px 20px 30px;
+  text-align: center;
+}
+.package_bottom h3 {
+  font-size: 29px;
+  line-height: 40px;
+  font-weight: 300;
+  margin-bottom: 14px;
+}
+/* ========== LISTING PAGE  ============ */
+.sort-by {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: end;
+}
+.sort-by .form-select {
+  width: 200px;
+  border: 0;
+}
 /*============ THEME FOOTER ============= */
 .social-footer {
   display: flex;
