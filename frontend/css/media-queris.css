@@ -35,7 +35,7 @@
     animation-duration: 1s;
     animation-fill-mode: both;
   }
-  body.home-page .header.header-light.shift{
+  body.home-page .header.header-light.shift {
     background-color: var(--th-bg-white) !important;
   }
   .header.header-dark.shift {
@@ -122,6 +122,11 @@
   .th-animated-btn-icon svg {
     width: 18px;
     height: 18px;
+  }
+  /* Property card Hover effect */
+  .property-card-images::after,
+  .property-card-images::before {
+    display: none;
   }
 }
 @media only screen and (max-width: 650px) {

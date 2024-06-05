@@ -699,6 +699,11 @@ body::-webkit-scrollbar-thumb {
   font-size: 16px;
   font-weight: 700;
 }
+/* THEME Animated btn small  */
+.th-animated-btn.sm .th-animated-btn-icon{
+  width: clamp(2rem, 2rem + 2vw, 5rem) !important;
+  height: clamp(2rem, 2rem + 2vw, 5rem) !important;
+}
 
 /* TH-BTNS WITH DIFFERENT COLORS */
 .th-btn.btn-1 {
@@ -817,6 +822,10 @@ body::-webkit-scrollbar-thumb {
   .th-sec-title-md {
     font-size: 40px;
   }
+  .th-sec-title-md-25 {
+    font-size: 25px;
+    line-height: 1.4;
+  }
   .th-sec-title-md-30 {
     font-size: 30px;
   }
@@ -824,6 +833,10 @@ body::-webkit-scrollbar-thumb {
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
   .th-sec-title {
     font-size: 45px;
+  }
+  .th-sec-title-md-25 {
+    font-size: 22px;
+    line-height: 1.4;
   }
   .th-sec-title-md-30 {
     font-size: 25px;
@@ -836,6 +849,10 @@ body::-webkit-scrollbar-thumb {
   .th-sec-title-md {
     font-size: 35px;
   }
+  .th-sec-title-md-25 {
+    font-size: 20px;
+    line-height: 1.4;
+  }
   .th-sec-title-md-30 {
     font-size: 22px;
   }
@@ -847,6 +864,10 @@ body::-webkit-scrollbar-thumb {
   }
   .th-sec-title-md {
     font-size: 30px;
+  }
+  .th-sec-title-md-25 {
+    font-size: 19px;
+    line-height: 1.4;
   }
   .th-sec-title-md-30 {
     font-size: 20px;
@@ -868,6 +889,10 @@ body::-webkit-scrollbar-thumb {
   color: var(--th-bg-black);
   font-weight: 700;
   line-height: 1.3;
+}
+.th-sec-title-md-25 {
+  color: var(--th-bg-black);
+  font-weight: 700;
 }
 .th-sec-title-md-30 {
   color: var(--th-bg-black);
