@@ -275,3 +275,24 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 })(jQuery);
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const pillsTab = document.getElementById("pills-tab");
+  const navLinks = pillsTab.querySelectorAll(".nav-link");
+
+  function scrollToActiveTab() {
+    const activeTab = pillsTab.querySelector(".nav-link.active");
+    if (activeTab) {
+      activeTab.scrollIntoView({ inline: "center" });
+    }
+  }
+
+  // Scroll to the active tab on page load
+  scrollToActiveTab();
+
+  // Scroll to the active tab whenever a tab is clicked
+  navLinks.forEach((link) => {
+    link.addEventListener("shown.bs.tab", scrollToActiveTab);
+  });
+});

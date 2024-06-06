@@ -63,7 +63,7 @@ body.home-page .header {
 }
 .menu.is-active {
   left: 0;
-  width: 270px;
+  width: 227px;
   height: 100%;
   background-color: ;
 }
@@ -1076,7 +1076,7 @@ body.home-page::after {
 .package_content {
   padding: 0px 15px 20px;
 }
-.package_content .fs_14 {
+.package_content p {
   font-weight: 400;
   line-height: 26px;
   text-align: left;
@@ -1084,6 +1084,9 @@ body.home-page::after {
   color: #000;
   position: relative;
   padding-left: 22px;
+}
+.package_content.text-white p {
+  color: #fff;
 }
 .check::after {
   content: "";
@@ -1127,8 +1130,15 @@ body.home-page::after {
 .package_bottom .th-btn {
   border-radius: 0;
 }
+/*  */
+.section-packages .form-wrap {
+  padding: 33px 15px 20px;
+}
+.section-packages .form-wrap h3 {
+  font-family: var(--th-body-family);
+}
 /* BOOTSTRAP NAV TAB OVERRIHT */
-.nav-link {
+.nav-pills .nav-link {
   font-size: 16px;
   font-weight: 600;
   border-radius: 35px !important;
