@@ -136,6 +136,10 @@
   .animated-border::after {
     display: none;
   }
+  /* SEACRH WIDGET */
+  .flex-wrap-4 > div {
+    width: calc(50% - 20px);
+  }
 }
 @media only screen and (max-width: 768px) {
   /* TH ANIMATED BTN ICON */
@@ -228,7 +232,7 @@
     width: 100%;
   }
   /* Partner Section */
-  .section_partner-item{
+  .section_partner-item {
     border: 0;
   }
 }
@@ -239,6 +243,10 @@
   .menu-inner .th-btn {
     display: flex;
     align-items: center;
+    width: 100%;
+  }
+  /* SEACRH WIDGET */
+  .flex-wrap-4 > div {
     width: 100%;
   }
 }
