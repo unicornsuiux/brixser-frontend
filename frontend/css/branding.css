@@ -66,8 +66,10 @@
   --th-fs-h5: 20px;
   --th-fs-h6: 18px;
   --th-fs-btn: 20px;
+  --th-font10: 10px;
   --th-font12: 12px;
   --th-font14: 14px;
+  --th-font15: 15px;
   --th-font16: 16px;
   --th-font18: 18px;
   --th-font20: 20px;
@@ -246,7 +248,7 @@ input:focus {
   background-color: var(--th-primary-color);
   box-shadow: none;
 }
-.form-check-input:focus{
+.form-check-input:focus {
   box-shadow: none !important;
 }
 .form-select:focus {
@@ -273,7 +275,7 @@ label {
   box-shadow: none;
   outline: 1px solid var(--th-primary-color);
 }
-textarea.form-control{
+textarea.form-control {
   height: 80px;
 }
 a:focus,
@@ -374,7 +376,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 /* ============= COMMON CLASSES CSS START  =========== */
-.box-shadow-none{
+.box-shadow-none {
   box-shadow: none !important;
 }
 .obj-fit-cover {
@@ -732,7 +734,7 @@ body::-webkit-scrollbar-thumb {
   font-weight: 700;
 }
 /* THEME Animated btn small  */
-.th-animated-btn.sm .th-animated-btn-icon{
+.th-animated-btn.sm .th-animated-btn-icon {
   width: clamp(2rem, 2rem + 2vw, 5rem) !important;
   height: clamp(2rem, 2rem + 2vw, 5rem) !important;
 }
@@ -972,7 +974,7 @@ body::-webkit-scrollbar-thumb {
 .theme-pagination ul li a:hover,
 .theme-pagination ul li a.current {
   background: var(--th-primary-color);
-  border-color: var(--th-bg-black);
+  border-color: var(--th-primary-color);
   color: var(--th-bg-white);
 }
 
@@ -2852,12 +2854,20 @@ body::-webkit-scrollbar-thumb {
   text-overflow: ellipsis;
 }
 /* FONT SIZE CLASS */
+.fs_10 {
+  font-size: var(--th-font10);
+}
 .fs-14 {
   font-weight: 700 !important;
-  font-size: 14px;
+  font-size: var(--th-font14);
 }
 .fs_14 {
-  font-size: 14px;
+  font-size: var(--th-font14);
+}
+.fs-15 {
+  font-size: var(--th-font15) !important;
+  font-weight: 400;
+  color: #181a20;
 }
 .fs-16 {
   font-size: var(--th-font16) !important;
@@ -2868,7 +2878,7 @@ body::-webkit-scrollbar-thumb {
 .fs-20 {
   font-size: var(--th-font20) !important;
 }
-@media only screen and (max-width:600px){
+@media only screen and (max-width: 600px) {
   .fs-18 {
     font-size: var(--th-font16) !important;
   }
@@ -2910,12 +2920,12 @@ body::-webkit-scrollbar-thumb {
 }
 
 /* SWIPER SLIDER DEAFAULT CSS */
-.swiper {
+.sidebySlider .swiper {
   width: 100%;
   padding-top: 50px;
   padding-bottom: 50px;
 }
-.swiper-slide {
+.sidebySlider .swiper-slide {
   background-position: center;
   background-size: cover;
   height: 550px;
@@ -3045,15 +3055,20 @@ body::-webkit-scrollbar-thumb {
 }
 
 /* BACKGROUND-COLOR */
-.bg-primary{
+.bg-primary {
   background-color: var(--th-primary-color) !important;
 }
-.bg-dark{
+.bg-dark {
   background-color: var(--th-bg-black) !important;
 }
-.bg-graditent-1{
-  background: linear-gradient(37deg, rgba(239,50,166,1) 0%, rgba(104,39,79,1) 0%, rgba(34,33,33,1) 35%);
+.bg-graditent-1 {
+  background: linear-gradient(
+    37deg,
+    rgba(239, 50, 166, 1) 0%,
+    rgba(104, 39, 79, 1) 0%,
+    rgba(34, 33, 33, 1) 35%
+  );
 }
-.bg-transparent{
+.bg-transparent {
   background-color: transparent !important;
 }

@@ -126,28 +126,22 @@ $(function () {
 });
 
 //  Swiper slider
-var swiper = new Swiper(".sidebySlider", {
-  grabCursor: true,
-  effect: "creative",
-  creativeEffect: {
-    prev: {
-      shadow: true,
-      translate: [0, 0, -400],
+      
+var swiper = new Swiper(".property-detail-slider", {
+    spaceBetween: 10,
+    slidesPerView: 6,
+    freeMode: true,
+    watchSlidesProgress: true,
+});
+var swiper2 = new Swiper(".property-detail-slider2", {
+    spaceBetween: 10,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
     },
-    next: {
-      translate: ["100%", 0, 0],
+    thumbs: {
+        swiper: swiper,
     },
-  },
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  autoplay: {
-    delay: 2000, // delay between transitions in milliseconds
-    disableOnInteraction: false, // autoplay won't stop after interactions
-  },
-  loop: true, // make sure the slider loops
-  speed: 2000, // transition speed in milliseconds
 });
 
 const navbarMenu = document.getElementById("menu");
@@ -223,8 +217,8 @@ var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
 
 // Add event listener for button click
 document.addEventListener("DOMContentLoaded", function () {
-  // Get all buttons with the class 'property-badge star'
-  var starButtons = document.querySelectorAll(".property-badge.star");
+  // Get all buttons with the class 'property-badge star fav-star'
+  var starButtons = document.querySelectorAll(".fav-star.star");
 
   // Iterate over each button
   starButtons.forEach(function (starButton) {
@@ -275,7 +269,6 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 })(jQuery);
-
 
 document.addEventListener("DOMContentLoaded", function () {
   const pillsTab = document.getElementById("pills-tab");
