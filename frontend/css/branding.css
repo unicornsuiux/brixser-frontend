@@ -2969,6 +2969,80 @@ body::-webkit-scrollbar-thumb {
   background-color: var(--th-bg-black) !important;
 }
 
+/* ========= ACCORDION ========== */
+
+.th-accordion .accordion-item {
+  border: 1px solid var(--th-bc-light-300);
+  margin-bottom: 25px;
+  border-radius: 16px;
+}
+.th-accordion .accordion-item:first-of-type .accordion-button {
+  border-radius: 16px;
+}
+.th-accordion .accordion-item:last-of-type {
+  margin-bottom: 0;
+}
+.th-accordion .accordion-item:last-of-type .accordion-button.collapsed {
+  border-width: 1px;
+  border-radius: 16px;
+}
+.th-accordion .accordion-button {
+  border-radius: 16px;
+  padding: 15px 25px;
+  height: 72px;
+  font-size: 16px;
+  font-weight: var(--th-fw-500);
+  color: var(--th-bg-black);
+  text-transform: uppercase;
+  padding-inline-end: 8px;
+  justify-content: space-between;
+  text-align: left;
+  background: var(--th-bg-white);
+  text-transform: capitalize;
+  position: relative;
+  padding-inline-end: 60px;
+}
+.th-accordion .accordion-button::after {
+  content: "\f067";
+  background-image: none;
+  font-family: "font awesome 5 pro";
+  font-size: 14px;
+  font-weight: 400;
+  height: 28px;
+  width: 28px;
+  border: 1px solid var(--th-bg-black);
+  line-height: 26px;
+  border-radius: 50%;
+  margin-inline-start: 0;
+  margin-inline-end: 18px;
+  text-align: center;
+  color: var(--th-bg-black);
+  position: absolute;
+  inset-inline-end: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.th-accordion .accordion-button:not(.collapsed) {
+  background-color: var(--th-primary-color);
+  color: var(--th-bg-white);
+  box-shadow: none;
+}
+.th-accordion .accordion-button:not(.collapsed)::after {
+  border-color: var(--th-bg-white);
+  background: var(--th-bg-white);
+  content: "\f068";
+  color: var(--th-bg-black);
+}
+.th-accordion .accordion-button:focus {
+  box-shadow: none;
+}
+.th-accordion .accordion-body {
+  padding: 21px 25px 11px;
+}
+.th-accordion .accordion-body p {
+  font-size: 18px;
+}
+
 /* Max Width */
 .mx-w-600 {
   max-width: 600px;
@@ -3071,4 +3145,14 @@ body::-webkit-scrollbar-thumb {
 }
 .bg-transparent {
   background-color: transparent !important;
+}
+
+/* badge */
+.badge {
+  font-size: 12px;
+  font-weight: 400;
+  padding: 7px 16px;
+}
+.badge.bg-primary{
+  color: #fff;
 }

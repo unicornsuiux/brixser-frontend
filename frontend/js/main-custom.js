@@ -1,3 +1,24 @@
+$(".similar-property-slider").owlCarousel({
+  loop: false,
+  margin: 10,
+  nav: false,
+  dots: true,
+  autoplay: true,
+  autoplayTimeout: 4000,
+  autoplayHoverPause: true,
+  autoplaySpeed: 2000,
+  responsive: {
+    0: {
+      items: 1,
+    },
+    600: {
+      items: 2,
+    },
+    1000: {
+      items: 3,
+    },
+  },
+});
 $(document).ready(function () {
   // Toggle the .advance-seacrh-wrap visibility on button click
   $(".advance-search button").on("click", function (event) {
@@ -126,23 +147,24 @@ $(function () {
 });
 
 //  Swiper slider
-      
+
 var swiper = new Swiper(".property-detail-slider", {
-    spaceBetween: 10,
-    slidesPerView: 6,
-    freeMode: true,
-    watchSlidesProgress: true,
+  spaceBetween: 10,
+  slidesPerView: 6,
+  freeMode: true,
+  watchSlidesProgress: true,
 });
 var swiper2 = new Swiper(".property-detail-slider2", {
-    spaceBetween: 10,
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
-    thumbs: {
-        swiper: swiper,
-    },
+  spaceBetween: 10,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  thumbs: {
+    swiper: swiper,
+  },
 });
+
 
 const navbarMenu = document.getElementById("menu");
 const burgerMenu = document.getElementById("burger");
