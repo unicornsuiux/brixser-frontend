@@ -1320,7 +1320,7 @@ body::-webkit-scrollbar-thumb {
   background: #fff;
 }
 .hero-banner .carousel-item {
-  height: 500px;
+  height: 450px;
 }
 .home-banner .carousel-item .carousel-caption {
   text-align: left;
@@ -2891,6 +2891,35 @@ body::-webkit-scrollbar-thumb {
   font-size: 16px;
   font-weight: 600;
 }
+/* FONT WEIGHT CLASS */
+.fw-normal {
+  font-weight: var(--th-fw-normal);
+}
+.fw-200 {
+  font-weight: var(--th-fw-200);
+}
+.fw-300 {
+  font-weight: var(--th-fw-300);
+}
+.fw-400 {
+  font-weight: var(--th-fw-400);
+}
+.fw-500 {
+  font-weight: var(--th-fw-500);
+}
+.fw-600 {
+  font-weight: var(--th-fw-600);
+}
+.fw-700 {
+  font-weight: var(--th-fw-700);
+}
+.fw-800 {
+  font-weight: var(--th-fw-800);
+}
+.fw-900 {
+  font-weight: var(--th-fw-900);
+}
+/* AFTER CIRCLR */
 .after-circle {
   position: relative;
   width: fit-content;
@@ -2968,6 +2997,9 @@ body::-webkit-scrollbar-thumb {
 .swiper-pagination-bullet.swiper-pagination-bullet-active {
   background-color: var(--th-bg-black) !important;
 }
+.swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled{
+  opacity: 1;
+}
 
 /* ========= ACCORDION ========== */
 
@@ -2975,9 +3007,10 @@ body::-webkit-scrollbar-thumb {
   border: 1px solid var(--th-bc-light-300);
   margin-bottom: 25px;
   border-radius: 16px;
+  overflow: hidden;
 }
 .th-accordion .accordion-item:first-of-type .accordion-button {
-  border-radius: 16px;
+  border-radius: 16px 16px 0 0;
 }
 .th-accordion .accordion-item:last-of-type {
   margin-bottom: 0;
@@ -3146,6 +3179,14 @@ body::-webkit-scrollbar-thumb {
 .bg-transparent {
   background-color: transparent !important;
 }
+/* TEXT COLOR */
+
+.th-primary{
+  color: var(--th-primary-color) !important;
+}
+.th-gray{
+  color: #79797a !important;
+}
 
 /* badge */
 .badge {
@@ -3153,6 +3194,18 @@ body::-webkit-scrollbar-thumb {
   font-weight: 400;
   padding: 7px 16px;
 }
-.badge.bg-primary{
+.badge.bg-primary {
   color: #fff;
+}
+
+
+/* OWL SLIDE */
+.owl-theme .owl-dots .owl-dot span {
+  background-color: var(--th-bg-black);
+  border-radius: 0;
+  opacity: 1;
+}
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+  background-color: var(--th-primary-color);
 }

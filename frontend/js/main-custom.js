@@ -160,6 +160,10 @@ var swiper2 = new Swiper(".property-detail-slider2", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
   thumbs: {
     swiper: swiper,
   },
