@@ -45,6 +45,15 @@
     animation-fill-mode: both;
   }
 }
+@media only screen and (max-width: 1400px) {
+  /* About page animates Image */
+  .about-img-wrap-2::after {
+    right: 10px;
+  }
+  .about-img-wrap-2 {
+    width: 100%;
+  }
+}
 @media only screen and (max-width: 1250px) {
   .site-logo-wrap {
     width: fit-content;
@@ -139,6 +148,10 @@
   /* SEACRH WIDGET */
   .flex-wrap-4 > div {
     width: calc(50% - 20px);
+  }
+  /* About page animates Image */
+  .about-img-wrap-2 {
+    height: 100%;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -235,6 +248,10 @@
   .section_partner-item {
     border: 0;
   }
+  /* th-card-3-inner */
+  .th-card-3-inner {
+    height: auto;
+  }
 }
 @media only screen and (max-width: 520px) {
   .header .header-left-link .th-btn {
@@ -248,5 +265,17 @@
   /* SEACRH WIDGET */
   .flex-wrap-4 > div {
     width: 100%;
+  }
+  /*THEME ACCORDION */
+  .th-accordion .accordion-button {
+    padding: 10px;
+    padding-right: 50px;
+  }
+  /* set-position */
+  .set-position {
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+    padding: 7px;
   }
 }
