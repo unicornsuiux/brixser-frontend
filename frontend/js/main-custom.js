@@ -315,3 +315,14 @@ document.addEventListener("DOMContentLoaded", function () {
     link.addEventListener("shown.bs.tab", scrollToActiveTab);
   });
 });
+
+
+$(document).ready(function () {
+  $("#sign-in").click(function () {
+    $(".group-form-wrap").removeClass("sign-up").addClass("sign-in");
+  });
+
+  $("#sign-up").click(function () {
+    $(".group-form-wrap").removeClass("sign-in").addClass("sign-up");
+  });
+});

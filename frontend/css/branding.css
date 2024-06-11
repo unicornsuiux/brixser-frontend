@@ -277,6 +277,39 @@ label {
 }
 textarea.form-control {
   height: 80px;
+  height: 80px;
+}
+.input-group-text {
+  width: 80px;
+  justify-content: center;
+  border: 0;
+  background-color: #f4f4f4;
+  border-radius: 4px 0 0 4px;
+}
+.input-group-text i {
+  font-size: 24px;
+  color: var(--th-primary-color);
+}
+.input-group .form-floating {
+  width: calc(100% - 80px);
+}
+.form-floating .form-control {
+  border-radius: 0px 4px 4px 0px;
+  width: 100%;
+  border: 0;
+  height: 80px;
+  background-color: #f4f4f4;
+}
+.form-floating .form-control:focus {
+  border: 0 !important;
+  outline: 0;
+}
+.input-group .form-floating label {
+  font-weight: 300 !important;
+  top: 9px;
+}
+.form-floating > .form-control:focus ~ label {
+  transform: scale(0.85) translateY(-0.9rem) translateX(0.15rem);
 }
 a:focus,
 button:focus {
@@ -3262,4 +3295,9 @@ body::-webkit-scrollbar-thumb {
 }
 .breads a {
   color: #fff;
+}
+
+/* sec-vw */
+.sec-vw {
+  min-height: 100vh;
 }

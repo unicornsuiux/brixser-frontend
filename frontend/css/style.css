@@ -1506,10 +1506,35 @@ body.home-page::after {
   width: 90%;
   z-index: 1;
 }
-/* CONTACT PAGE */
-.about-block-item{
-  
+
+/* SIGN UP AND SIGN IN*/
+.group-form-wrap {
+  overflow: hidden;
+  position: relative;
 }
+.group-form-wrap .form-item {
+  width: 526px;
+  position: relative;
+  transition: all 0.5s ease-in;
+}
+.group-form-wrap .form-item-2 {
+  top: -248px;
+  position: relative;
+}
+.group-form-wrap.sign-in .form-item-2 {
+  transform: translateX(530px);
+}
+.group-form-wrap.sign-in .form-item-1 {
+  transform: translateX(0px);
+}
+
+.group-form-wrap.sign-up .form-item-1 {
+  transform: translateX(-530px);
+}
+.group-form-wrap.sign-up .form-item-2 {
+  transform: translateX(0px);
+}
+
 /*============ THEME FOOTER ============= */
 .social-footer {
   display: flex;
