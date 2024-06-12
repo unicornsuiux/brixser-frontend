@@ -1527,13 +1527,21 @@ body.home-page::after {
 .group-form-wrap.sign-in .form-item-1 {
   transform: translateX(0px);
 }
-
 .group-form-wrap.sign-up .form-item-1 {
   transform: translateX(-530px);
 }
 .group-form-wrap.sign-up .form-item-2 {
   transform: translateX(0px);
 }
+
+/* BLOG */
+.blog-img-wrap{
+  width: 100%;
+  height: 450px;
+  overflow: hidden;
+  border-radius: var(--th-radius-15);
+}
+
 
 /*============ THEME FOOTER ============= */
 .social-footer {
