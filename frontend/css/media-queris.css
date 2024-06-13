@@ -53,6 +53,10 @@
   .about-img-wrap-2 {
     width: 100%;
   }
+  /* Package Section */
+  .package_content {
+    min-height: 350px;
+  }
 }
 @media only screen and (max-width: 1250px) {
   .site-logo-wrap {
@@ -152,6 +156,10 @@
   /* About page animates Image */
   .about-img-wrap-2 {
     height: 100%;
+  }
+  /* Package Content */
+  .package_content {
+    min-height: auto;
   }
 }
 @media only screen and (max-width: 768px) {

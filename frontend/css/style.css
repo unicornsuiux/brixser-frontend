@@ -390,7 +390,7 @@ body.home-page::after {
   content: "";
   width: 10px;
   height: 10px;
-  left: 9.5px;
+  left: 9px;
   background-color: #fff;
   border-radius: 100%;
   -webkit-animation: sdb10 2s infinite;

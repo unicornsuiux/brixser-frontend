@@ -473,7 +473,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .theme_list,
-.section-content-detail ul{
+.section-content-detail ul {
   padding-left: 25px;
   list-style: none;
 }
@@ -887,6 +887,54 @@ body::-webkit-scrollbar-thumb {
 }
 
 /*================ SECTION HEADING RESPONSIVENESS ================*/
+.th-sec-title {
+  font-size: 55px;
+}
+.th-sec-title-md {
+  color: var(--th-bg-black);
+  font-weight: 700;
+  line-height: 1.3;
+  font-size: 40px;
+}
+.th-sec-title-md-25,
+.section-content-detail h3 {
+  font-size: 25px;
+  line-height: 1.4;
+  color: var(--th-bg-black);
+  font-weight: 700;
+}
+.th-sec-title-md-30,
+.section-content-detail h2 {
+  font-size: 30px;
+  color: var(--th-bg-black);
+  font-weight: 700;
+}
+.section-content-detail h4 {
+  font-size: 23px;
+}
+.th-heading-sm {
+  font-size: 20px;
+  line-height: 1.4;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: var(--th-bg-black);
+}
+.th-heading-sm-bold {
+  display: block;
+  font-size: 1.25em;
+  font-weight: var(--th-fw-700);
+  margin-top: 0px;
+  margin-bottom: 0;
+  text-transform: none;
+}
+.section-content-detail h2,
+.section-content-detail h3,
+.section-content-detail h4,
+.section-content-detail h5,
+.section-content-detail h6 {
+  color: var(--th-bg-black);
+  font-weight: 700;
+}
 
 @media only screen and (min-width: 1400px) and (max-width: 1599px) {
   .th-sec-title {
@@ -945,8 +993,7 @@ body::-webkit-scrollbar-thumb {
     font-size: 19px;
   }
 }
-@media only screen and (min-width: 576px) and (max-width: 767px),
-  only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 991px) {
   .th-sec-title {
     font-size: 45px;
   }
@@ -985,43 +1032,6 @@ body::-webkit-scrollbar-thumb {
   .section-content-detail h6 {
     font-size: 18px;
   }
-}
-.th-sec-title-md {
-  color: var(--th-bg-black);
-  font-weight: 700;
-  line-height: 1.3;
-}
-.th-sec-title-md-25 {
-  color: var(--th-bg-black);
-  font-weight: 700;
-}
-.th-sec-title-md-30 {
-  color: var(--th-bg-black);
-  font-weight: 700;
-}
-.th-heading-sm {
-  font-size: 20px;
-  line-height: 1.4;
-  font-weight: 600;
-  text-transform: capitalize;
-  color: var(--th-bg-black);
-}
-.th-heading-sm-bold {
-  display: block;
-  font-size: 1.25em;
-  font-weight: var(--th-fw-700);
-  margin-top: 0px;
-  margin-bottom: 0;
-  text-transform: none;
-}
-
-.section-content-detail h2,
-.section-content-detail h3,
-.section-content-detail h4,
-.section-content-detail h5,
-.section-content-detail h6 {
-  color: var(--th-bg-black);
-  font-weight: 700;
 }
 
 /*================ THEME PAGINATION ================*/
